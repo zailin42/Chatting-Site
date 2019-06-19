@@ -1,0 +1,593 @@
+@media screen and (max-width:758px){
+
+header{
+    min-width:100%;
+    height:90px;
+    background:#0b1218;
+}
+
+section{
+    background:url(../img/main2.jpg) no-repeat;
+    background-size:100% 100%;
+}
+
+/* Google Chrome  */
+section::-webkit-scrollbar{
+    display:none;
+}
+
+header > nav{
+    height:100%;
+}
+
+header > nav > a > img{
+    position:absolute;
+    top:10px;
+    left:50%;
+    width:60px;
+    transform:translate(-50%,0);
+}
+
+header > nav > ul{
+    width:100%;
+    height:0;
+    transition:1s;
+    background: #0b1218;
+    position:absolute;
+    z-index:1800;
+    top:0;
+    left:-10px;
+}
+
+header > nav.inlog > .menu{
+    display:block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top:15px;
+    z-index: 2000;
+    cursor: pointer;
+}
+
+header > nav.inlog > ul{
+    overflow:hidden;
+}
+
+header > nav > ul > li:first-child{
+    margin-top:70px;
+}
+header > nav > ul > li > a{
+    color:#fff;
+    font-size: 20px;
+    font-weight:bold;
+    text-decoration: none;
+}
+header > nav > ul > .log:hover{
+    background:#00a86b;
+}
+
+header > nav > ul > li > a:hover{
+    border-bottom:none;
+    color:snow;
+}
+
+header > nav > ul > li{
+    text-align:center;
+    display:block;
+    float:none;
+}
+
+header > nav > ul > .nolog{
+    position: absolute;
+    transform:translate(-50%,0);
+    top:300px;
+    background:#00a86b;
+    width:80px;
+    font-size:20px;
+    border:1px solid #00a86b;
+    border-radius:5px;
+    margin:0;
+}
+
+header > nav > ul > li.log{
+    margin:0;
+    left:34%;
+}
+
+header > nav > ul > li.reg{
+    background:#ed2939;
+    border-color:#ed2939;
+    left:64%;
+}
+
+
+div.alert {
+    z-index:5000;
+    width:90%;
+}
+
+.hello-box{
+    left:50%;
+    transform:translate(-50%,0);
+    margin-top:90px;
+    text-align:center;
+}
+
+
+.hello-box > .hello{
+    font-size:20px;
+    color:white;
+}
+
+.hello-box > .welcome{
+    margin-left:0;
+    line-height:50px;
+    font-size:30px;
+}
+
+.hello-box > .welcome.sec{
+    width:100%;
+}
+
+section > .form > .login{
+    margin-top:25px;
+    margin-bottom:20px;
+}
+
+section > .form > form > input {
+    margin-top:10px;
+    width:180px;
+}
+
+section > .form > form > select{
+    margin-top:10px;
+    padding:4px;
+}
+
+
+/* choice */
+
+section > .choice{
+    width:100%;
+    top:120px;
+    z-index:500;
+}
+
+section > .choice > a {
+    width: 160px;
+    height: 100px;
+    background:#c2cdd6;
+}
+
+
+section > .choice > a > p{
+    width:100%;
+    height:100%;
+    font-size:20px;
+    line-height:100px;
+}
+
+section > .choice > .slc{
+    float:none;
+    margin:20px auto;
+}
+
+section > .choice > .crazy{
+    margin-bottom:70px;
+}
+
+section > .choice > a > p > img{
+    width:20%;
+}
+
+
+
+/* about */
+section > #about{
+    width:90px;
+    height:30px;
+    font-size:13px;
+    line-height:30px;
+    left:20px;
+}
+
+section > div.about > .blind-box{
+    width:70%;
+    min-width:280px;
+    padding:25px;
+}
+
+section > div.about > .blind-box > input{
+    margin-top:60px;
+    margin-left:-30px;
+}
+
+/* ffriend */
+section > .ff{
+    width:100%;
+    height:100%;
+    min-height:380px;
+    border-radius:0px;
+    margin-top:0px;
+    position: relative;
+    top:90px;
+}
+
+section > .ff > .search {
+    height: 10%;
+}
+
+section > .ff > .search > form > input {
+    height: 35px;
+    padding-left: 5px;
+}
+
+section > .ff > .search > form > .sub {
+	font-size:17px;
+}
+
+section > .ff > .info > li {
+    list-style:none;
+    margin-bottom: 17px;
+    font-size: 16px;
+    height: 45px;
+}
+
+section > .ff > .info > li > a > * {
+    float: left;
+}
+
+section > .ff > .info > li > a > img {
+    width: 45px;
+    height: 45px;
+    
+}
+
+section > .ff > .info > li > a > p.name {
+    line-height: 45px;
+}
+
+
+/* 친추 상태 */
+section > .fstate {
+    width: 100%;
+    height:100%;
+    min-width:100%;
+    display:block;
+    position: relative;
+    top:90px;
+    z-index:1100;
+}
+
+section > .fstate > i.down{
+    position:absolute;
+    z-index:1000;
+    right:10px;
+    margin-top:11px;
+    color:#fff;
+    font-size:25px;
+    cursor:pointer;
+    display:block;
+}
+
+section > .fstate > .fstate_box {
+    width:100%;
+    height:100%;
+    margin-top:0px;
+    margin-left:0px;
+    border-radius:0px;
+    overflow-y:scroll;
+    position:absolute;
+}
+
+section > .fstate > .fstate_box > p{
+    border-radius:0px;
+}
+
+section > .fstate > .fstate_box::-webkit-scrollbar{
+    display:none;
+}
+
+section .fstate_box > ul.take{
+    width:100%;
+}
+
+section > .fstate > .box1{
+    
+}
+
+section > .fstate > .box2{
+    transform-origin:1000px 500px;
+    transition-duration:1s;
+}
+
+section > .fstate > .fstate_box > ul > li > button {
+    font-size: 13px;
+    height: 27px;
+}
+
+
+/* 친구목록 */
+section > .choi{
+    width:100%;
+    height:100%;
+    top:90px;
+    padding-top:0px;
+    background:#C2CDD6;
+}
+            
+
+div.choi > li {
+    width: 100%;
+    height: 80px;
+    margin:0;
+    border:1px;
+    background:white;
+    border-bottom:1px solid #cccaca66;
+    border-radius:0px;
+    white-space: nowrap;
+}
+
+div.choi > li:hover{
+    background:white;
+    border:1px solid #cccaca66;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    color:black;
+    transform:none;
+}
+
+div.choi > li > img {
+    width: 60px;
+    height: 60px;
+    float:left;
+    margin-top:10px;
+    margin-left:15px;
+    margin-right:15px;
+}
+
+div.choi > li > p{
+    margin-top:20px;
+    text-align:left;
+}
+
+div.choi > li > p.nick {
+    font-size:17px;
+    line-height:17px;
+    height:20px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+div.choi > li > p.id {
+    font-size:15px;
+    margin-top:7px;
+    line-height:13px;
+    height:18px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+
+/* Profile */
+section > .prof {
+    width: 100%;
+    height: 100%;
+    margin-top:0px;
+    border-radius:0px;
+    position:relative;
+    top:90px;
+    z-index:1100;
+}
+
+section > .prof > .img > img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
+section > .prof > .info{
+    border-radius:0px 0px 8px 8px;
+}
+
+section > .prof > .info > p.name {
+    font-size:20px;
+    top: 60%;
+    width:80%;
+    text-align:center;
+    
+}
+
+section > .prof > .info > .buttons{
+    width:320px;
+    height: 60px;
+    padding-top:0px;
+    position:absolute;
+    top:75%;
+    left:50%;
+    transform:translate(-50%,0);
+}
+
+section > .prof > .info > .buttons > .button{
+    width:60px;
+    height:45px;
+    line-height: 50px;
+    font-size:15px;
+    margin:0 7px;
+}
+
+section > .prof > .info > .buttons > #fr > .fas{
+    margin-top:5px;
+    margin-bottom:-15px;
+}
+
+section > .prof > .info > .buttons > #fd > .fas{
+    margin-top:5px;
+    margin-bottom:-15px;
+}
+
+section > .prof > .info > span.control{
+    width:100px;
+    height:50px;
+    line-height: 55px;
+    top:57%;
+}
+
+section > .prof > div > div > form > #nick{
+    top:-7px;
+    left:50%;
+    transform: translate(-50%,0);
+}
+
+/* profile-management-interface */
+
+section > .prof > .img > #profile {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Chat_Box_Start */
+
+section div.chat {
+    width: 100%;
+    height:100%;
+    position: relative;
+    min-width:0;
+    z-index:3000;
+    margin-top:0;
+}
+
+
+/*------------Chat-Info-Box-------------*/
+
+section .chat > div.color_boxs{
+    width: 100%;
+    height: 10%;
+    padding:0;
+    min-height:60px;
+}
+
+section .chat > .color_boxs > .color-drop{
+    width:40px;
+    height:40px;
+    position:relative;
+    max-width:50px;
+    max-height:50px;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    border-radius:2px;
+    background:white;
+    float:right;
+    margin-top:15px;
+    margin-right:20px;
+}
+
+section .chat > .color_boxs > .color-drop > .col_box{
+    display:none;
+    margin-top:0;
+}
+
+section .chat > .color_boxs > .color-drop > .col_box:first-child{
+    margin-top:0px;
+}
+
+section .chat > .color_boxs > .color-drop:hover > .col_box{
+    display:block;
+    margin-right:0px;
+    border:1px solid #fff;
+    border-top:none;
+}
+
+section .chat > .color_boxs > .color-drop:hover > .col_box:first-child{
+    border-top:1px solid #fff;
+}
+
+section .chat > div.info {
+    width: 100%;
+    height: 82%;
+    padding: 0;
+}
+
+/*--------------------------------*/
+section .chat > .write {
+    width: 100%;
+    height: 10%;
+    min-height:55px;
+}
+
+section .chat > .write > form{
+    height:100%;
+}
+
+section .chat > .write > form > input {
+    height:100%;
+    border:0;
+}
+
+section .chat > .write > form > #sub{
+    margin-right:0;
+}
+
+/* Chat_Box_End */
+
+
+/* 신고 */
+.decla-box{
+    width:100%;
+    height:100%;
+    min-width:300px;
+    position: relative;
+    z-index:500;
+    border-radius:0px;
+}
+
+.writing > .h3{
+    border-radius:0px;
+}
+
+
+/* footer */
+footer{
+    z-index:200;
+    height:52px;
+}
+
+footer > p{
+    color:snow; 
+    width:65%;
+    line-height:25px;
+    margin:0 auto;
+}
+
+}
+
+@media screen and (max-height:550px){
+    section > .prof > .back{
+        height:50%;
+    }
+
+    section > .prof > .info > p.name{
+        top:50%;
+    }
+
+    section > .prof > .info > span.control{
+        top:47%;
+    }
+
+    section > .prof > .info > .buttons{
+        top:70%;
+    }
+}
+
+@media screen and (max-width:1070px){
+    #back{
+        width:36px;
+        overflow:hidden;
+        line-height:34px;
+        font-size:25px;
+    }
+}

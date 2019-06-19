@@ -1,0 +1,31 @@
+create database ran_chat;
+
+use ran_chat;
+
+create table bath (id int(255) unsigned not null auto_increment, word char(255) not null,primary key(id));
+
+create table chat (id int(255) unsigned not null auto_increment,rid int(255) unsigned not null, sender char(100) not null, msg char(255) not null,time datetime,primary key(id));
+
+create table friends (id int(255) unsigned not null auto_increment,uid char(100) not null,who char(100) not null,primary key(id));
+
+create table request (id int(255) unsigned not null auto_increment,who char(100) not null, target char(100) not null,primary key(id));
+
+create table room (rid int(255) unsigned not null auto_increment, you char(100) not null, target char(100) not null, last_time datetime not null,primary key(rid));
+
+create table uinfo (id int(255) unsigned not null auto_increment, profile char(255) not null, background char(255) not null,primary key(id));
+
+create table users (id int(255) unsigned not null auto_increment,uname char(100) not null,pw char(100) not null,age int(100) unsigned not null,nick char(100) not null,time datetime, sex enum('boy','girl'),alert int(255) unsigned not null default 0,primary key(id));
+
+alter table users auto_increment=1;
+
+alter table uinfo auto_increment=1;
+
+alter table room auto_increment=1;
+
+alter table request auto_increment=1;
+
+alter table friends auto_increment=1;
+
+alter table chat auto_increment=1;
+
+alter table bath auto_increment=1;
